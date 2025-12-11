@@ -1,1 +1,1 @@
-console.log("aqui");
+console.log("Preload workspace started");

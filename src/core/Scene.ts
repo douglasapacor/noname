@@ -2,6 +2,7 @@ import { Entity } from "./Entity";
 
 export abstract class Scene {
   protected entities: Entity[] = [];
+  requestSceneChange?: (sceneName: string) => void;
 
   set entity(entity: Entity) {
     this.entities.push(entity);
@@ -16,6 +17,8 @@ export abstract class Scene {
   }
 
   abstract onEnter(): void;
+
+  abstract start(): void;
 
   abstract onExit(): void;
 }
