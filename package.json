@@ -4,10 +4,10 @@
   "main": "dist/main.js",
   "scripts": {
     "dev:renderer": "vite",
-    "dev:main": "vite --config electron.vite.config.ts",
+    "dev:main": "vite --config electron/electron.vite.config.ts",
     "dev:electron": "electronmon dist/electron/main.js",
     "dev": "npm run build && npm-run-all -p dev:*",
-    "build": "vite build && vite build --config electron.vite.config.ts",
+    "build": "vite build && vite build --config electron/electron.vite.config.ts",
     "start": "electron dist/electron/main.js"
   },
   "keywords": [],

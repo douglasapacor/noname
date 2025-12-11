@@ -14,7 +14,7 @@ async function createWindow() {
   if (!app.isPackaged) {
     await win.loadURL("http://localhost:5173");
   } else {
-    win.loadFile(path.join(__dirname, "../renderer/index.html"));
+    win.loadFile(path.join(__dirname, "../src/index.html"));
   }
 }
 
